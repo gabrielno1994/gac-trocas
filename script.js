@@ -55,11 +55,11 @@ function exibirDadosNaPagina(dados) {
 
             // Exibindo o valor de G14
             const g14DisplayValue = (dados.g14 === null || dados.g14 === undefined || dados.g14 === "") ? 'N/A (Dado Ausente)' : dados.g14;
-            htmlContent += `<h3>Valor da Célula G14 (Aba 'Calendário'):</h3>`;
+            htmlContent += `<h3>Número de trocas programadas para hoje:</h3>`;
             htmlContent += `<p><strong>${g14DisplayValue}</strong></p>`;
 
             // Exibindo os valores de X265 a X272 (sem o número da célula)
-            htmlContent += `<h3>Valores das Células X265-X272 (Aba 'Estatísticas'):</h3>`;
+            htmlContent += `<h3>Trocas programadas para hoje:</h3>`;
             if (dados.x265_x272.length > 0) {
                 htmlContent += `<ul>`;
                 dados.x265_x272.forEach((item, index) => {
