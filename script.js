@@ -44,7 +44,7 @@ function exibirDadosNaPagina(dados) {
     const container = document.getElementById('conteudo-json');
 
     if (!container) {
-        console.error("Erro: Elemento com ID 'conteudo-json' não encontrado no HTML. Verifique seu index.html.");
+        console.error("Erro: Elemento com ID 'conteudo-json' não encontrado no HTML.");
         return;
     }
 
@@ -54,19 +54,16 @@ function exibirDadosNaPagina(dados) {
         if (typeof dados === 'object' && dados !== null && dados.g14 !== undefined && Array.isArray(dados.x265_x272)) {
 
             // Exibindo o valor de G14
-            // Verifica se g14 é nulo, indefinido ou string vazia, caso contrário, usa o valor.
             const g14DisplayValue = (dados.g14 === null || dados.g14 === undefined || dados.g14 === "") ? 'N/A (Dado Ausente)' : dados.g14;
             htmlContent += `<h3>Valor da Célula G14 (Aba 'Calendário'):</h3>`;
             htmlContent += `<p><strong>${g14DisplayValue}</strong></p>`;
 
-            // Exibindo os valores de X265 a X272 (AGORA SEM O NÚMERO DA CÉLULA)
+            // Exibindo os valores de X265 a X272 (sem o número da célula)
             htmlContent += `<h3>Valores das Células X265-X272 (Aba 'Estatísticas'):</h3>`;
             if (dados.x265_x272.length > 0) {
                 htmlContent += `<ul>`;
                 dados.x265_x272.forEach((item, index) => {
-                    // *** ESTA LINHA DECLARA 'displayValue' ***
                     const displayValue = (item === "" || item === null || item === undefined) ? 'N/A (Célula Vazia)' : item;
-                    // *** E ESTA LINHA USA 'displayValue' ***
                     htmlContent += `<li>${displayValue}</li>`;
                 });
                 htmlContent += `</ul>`;
@@ -74,9 +71,7 @@ function exibirDadosNaPagina(dados) {
                 htmlContent += `<p>Nenhum dado encontrado para as estatísticas.</p>`;
             }
 
-            // Opcional: Adicionar o JSON bruto para depuração
-            htmlContent += '<h4>JSON Completo Recebido:</h4>';
-            htmlContent += `<pre>${JSON.stringify(dados, null, 2)}</pre>`;
+            // REMOVIDAS AS LINHAS DO JSON COMPLETO AQUI
 
         } else {
             htmlContent = '<p style="color: orange;">Formato de dados inesperado do Apps Script. Verifique o JSON retornado.</p>';
