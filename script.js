@@ -66,7 +66,7 @@ function exibirDadosNaPagina(dados) {
 
             // Exibindo o valor de G14
             htmlContent += `<h3>Valor da Célula G14 (Aba 'Calendário'):</h3>`;
-            htmlContent += `<p><strong>${typeof dados.g14 === 'number' ? dados.g14 : 'N/A'}</strong></p>`; // Exibe o valor de G14
+            htmlContent += `<p><strong>${dados.g14 === null || dados.g14 === undefined ? 'N/A' : dados.g14}</strong></p>`; // Exibe o valor de G14
 
             // Exibindo os valores de X265 a X272
             htmlContent += `<h3>Valores das Células X265-X272 (Aba 'Estatísticas'):</h3>`;
