@@ -58,3 +58,10 @@ h1 {
     color: #570000;
     text-align: center;
 }
+
+.icone-titulo {
+    height: 124px;       /* Ajuste conforme o tamanho da imagem */
+    margin-left: 126px;  /* Espaço entre o texto e a imagem */
+    vertical-align: middle;
+}
+
