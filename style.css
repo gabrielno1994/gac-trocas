@@ -1,0 +1,51 @@
+/* style.css */
+
+/* Estilos básicos para o corpo da página */
+body {
+    font-family: 'Arial', sans-serif; /* Define a fonte principal */
+    margin: 20px; /* Margem externa em toda a página */
+    background-color: #f4f4f4; /* Cor de fundo suave */
+    color: #333; /* Cor do texto principal */
+    line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
+}
+
+/* Container principal para centralizar o conteúdo e dar um visual de "card" */
+.container {
+    max-width: 800px; /* Largura máxima do container */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+    background-color: #fff; /* Cor de fundo branca para o container */
+    padding: 20px 30px; /* Preenchimento interno */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidade */
+}
+
+/* Estilos para os títulos */
+h1, h2 {
+    color: #0056b3; /* Cor azul escuro para os títulos */
+    margin-bottom: 15px; /* Espaçamento abaixo dos títulos */
+}
+
+/* Estilos para o container onde o JSON será exibido */
+#conteudo-json {
+    margin-top: 20px; /* Margem superior */
+    padding: 15px; /* Preenchimento interno */
+    border: 1px solid #ddd; /* Borda leve */
+    border-radius: 5px; /* Cantos arredondados */
+    background-color: #e9e9e9; /* Cor de fundo para destacar a área de conteúdo */
+    white-space: pre-wrap; /* Garante que o texto pré-formatado (como JSON puro) quebre linhas */
+    word-wrap: break-word; /* Ajuda a evitar que palavras longas "vazem" do container */
+}
+
+/* Estilos para parágrafos dentro do #conteudo-json */
+#conteudo-json p {
+    margin: 5px 0; /* Espaçamento vertical para parágrafos */
+}
+
+/* Estilos para listas não ordenadas dentro do #conteudo-json */
+#conteudo-json ul {
+    list-style-type: disc; /* Tipo de marcador da lista */
+    margin-left: 20px; /* Recuo da lista */
+    padding: 0; /* Remove preenchimento padrão da lista */
+}
+
+/* Estilos para itens de lista dentro do #conte
