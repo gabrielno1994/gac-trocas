@@ -54,8 +54,9 @@ function exibirDadosNaPagina(dados) {
         if (typeof dados === 'object' && dados !== null && dados.g14 !== undefined && Array.isArray(dados.x265_x272)) {
 
             // Exibindo o valor de G14
-            const g14DisplayValue = (dados.g14 === null || dados.g14 === undefined || dados.g14 === "") ? 'N/A (Dado Ausente)' : dados.g14;
-            htmlContent += `<h3>Número de trocas programadas para hoje:</h3>`;
+            const g14DisplayValue = (dados.g14 === null || dados.g14 === undefined || dados.g14 === "")
+            ? 'N/A (Dado Ausente)' 
+            : `${dados.g14} trocas programadas para hoje`;
             htmlContent += `<p><strong>${g14DisplayValue}</strong></p>`;
 
             // Exibindo os valores de X265 a X272 (sem o número da célula)
