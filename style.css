@@ -2,15 +2,31 @@
 
 /* Estilos básicos para o corpo da página */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 20px;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
     font-size: 200%;
+    background: linear-gradient(to right, #f0f4f8, #d9e2ec);
 }
 
-/* Container principal */
+/*----------------------------------------*/
+/*incremento*/
+
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/*----------------------------------------*/
+
+/* Container principal 
+
 .container {
     max-width: 1800px; /* Aumentado para 1800px */
     margin: 0 auto;
@@ -18,7 +34,9 @@ body {
     padding: 20px 30px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
+}*/
+
+
 
 /* Títulos */
 h1 {
@@ -44,7 +62,7 @@ h1 {
     margin: 5px 0;
 }
 
-#conteudo-json ul {
+/*#conteudo-json ul {
     list-style-type: disc;
     margin-left: 20px;
     padding: 0;
@@ -52,7 +70,7 @@ h1 {
 
 #conteudo-json li {
     margin-bottom: 3px;
-}
+}*/
 
 .destaque-trocas {
     font-size: 150%; /* Aumenta 100% em relação ao body */
@@ -66,3 +84,37 @@ h1 {
     vertical-align: middle;
 }
 
+
+
+
+
+
+#conteudo-json ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#conteudo-json li {
+  padding: 8px 12px;
+  margin-bottom: 6px;
+  background-color: #fdfdfd;
+  border-left: 4px solid #0056b3;
+  border-radius: 4px;
+}
+
+.botao-recarregar {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 24px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+}
+
+.botao-recarregar:hover {
+  background-color: #003f80;
+}
