@@ -7,6 +7,15 @@ const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxOuXGU3ieQFp75
  * Função assíncrona para carregar os dados do Google Apps Script.
  * Usa a API Fetch para fazer a requisição HTTP.
  */
+const loader = document.getElementById('loader');
+loader.style.display = 'block'; // Mostrar
+container.innerHTML = '';       // Limpar conteúdo
+
+// Depois que os dados chegam
+loader.style.display = 'none';  // Esconder loader
+
+
+
 async function carregarDadosDoAppsScript() {
     const container = document.getElementById('conteudo-json');
     if (!container) {
