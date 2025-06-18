@@ -63,7 +63,7 @@ function exibirDadosNaPagina(dados) {
             if (dados.x265_x272.length > 0) {
                 htmlContent += `<ul>`;
                 dados.x265_x272.forEach((item, index) => {
-                    const displayValue = (item === "" || item === null || item === undefined) ? 'N/A (Célula Vazia)' : item;
+                    const displayValue = (item === "" || item === null || item === undefined) ? '' : item;
                     htmlContent += `<li>${displayValue}</li>`;
                 });
                 htmlContent += `</ul>`;
