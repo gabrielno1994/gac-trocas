@@ -64,7 +64,7 @@ function exibirDadosNaPagina(dados) {
                 htmlContent += `<ul>`;
                 dados.x265_x272.forEach((item, index) => {
                      const displayValue = (item === "" || item === null || item === undefined) ? 'N/A (Dado Ausente)' : item;
-                    htmlContent += `<li>${displayValue}</li>`;
+                    htmlContent += `<ul><li>${displayValue}</li></ul>`;
                 });
                 htmlContent += `</ul>`;
             } else {
