@@ -7,7 +7,7 @@ body {
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
-    font-size: 160%;
+    font-size: 200%;
 }
 
 /* Container principal */
@@ -22,6 +22,7 @@ body {
 
 /* Títulos */
 h1 {
+    font-size: 150%
     color: #0056b3;
     margin-bottom: 15px;
     text-align: center;
