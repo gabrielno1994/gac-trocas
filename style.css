@@ -52,3 +52,9 @@ h1 {
 #conteudo-json li {
     margin-bottom: 3px;
 }
+
+.destaque-trocas {
+    font-size: 200%; /* Aumenta 100% em relação ao body */
+    color: #570000;
+    text-align: center;
+}
