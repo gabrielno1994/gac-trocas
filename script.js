@@ -57,7 +57,7 @@ function exibirDadosNaPagina(dados) {
             const g14DisplayValue = (dados.g14 === null || dados.g14 === undefined || dados.g14 === "")
             ? 'N/A (Dado Ausente)' 
             : `${dados.g14} troca(s) programada(s) para hoje 
-	      <br>No momento estamos com ${dados.J2} pendência(s)`;
+	      No momento estamos com ${dados.J2} pendência(s)`;
             htmlContent += `<p class="destaque-trocas"><strong>${g14DisplayValue}</strong></p>`;
 
             // Exibindo os valores de X265 a X272 (sem o número da célula)
