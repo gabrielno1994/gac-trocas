@@ -24,7 +24,6 @@ async function carregarDadosDoAppsScript() {
         }
 
         const dados = await response.json();
-	console.log(response.json());
         console.log('Dados recebidos do Apps Script:', dados);
 
         exibirDadosNaPagina(dados);
@@ -41,7 +40,7 @@ async function carregarDadosDoAppsScript() {
  * @param {Object} dados - O objeto JSON retornado pelo Apps Script.
  */
 function exibirDadosNaPagina(dados) {
-	
+	 console.log(dados);
     const container = document.getElementById('conteudo-json');
 
     if (!container) {
