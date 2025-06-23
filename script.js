@@ -24,9 +24,7 @@ async function carregarDadosDoAppsScript() {
         }
 
         const dados = await response.json();
-	   console.log(dados); 
-	    alert(dados);
-
+	
         console.log('Dados recebidos do Apps Script:', dados);
 
         exibirDadosNaPagina(dados);
