@@ -49,13 +49,11 @@ function exibirDadosNaPagina(dados) {
     }
 
     let htmlContent = '';
-
+	alert(dados);
     if (dados) {
         if (typeof dados === 'object' && dados !== null && dados.g14 !== undefined && Array.isArray(dados.x265_x272)) {
-
-			alert(dados);
-
-            // Exibindo o valor de G14
+	    
+	    // Exibindo o valor de G14
             const g14DisplayValue = (dados.g14 === null || dados.g14 === undefined || dados.g14 === "")
             ? 'N/A (Dado Ausente)' 
             : `${dados.g14} troca(s) programada(s) para hoje`;
