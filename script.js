@@ -9,6 +9,7 @@ const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxOuXGU3ieQFp75
  */
 async function carregarDadosDoAppsScript() {
     const container = document.getElementById('conteudo-json');
+	 console.log(container);
     if (!container) {
         console.error("Erro: Elemento com ID 'conteudo-json' não encontrado no HTML.");
         return;
@@ -40,7 +41,7 @@ async function carregarDadosDoAppsScript() {
  * @param {Object} dados - O objeto JSON retornado pelo Apps Script.
  */
 function exibirDadosNaPagina(dados) {
-	 console.log(dados);
+	
     const container = document.getElementById('conteudo-json');
 
     if (!container) {
