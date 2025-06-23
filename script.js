@@ -49,7 +49,7 @@ function exibirDadosNaPagina(dados) {
     }
 
     let htmlContent = '';
-	
+	console.log(dados);
     if (dados) {
         if (typeof dados === 'object' && dados !== null && dados.g14 !== undefined && Array.isArray(dados.x265_x272)) {
 	    
