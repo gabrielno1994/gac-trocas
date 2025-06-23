@@ -24,7 +24,7 @@ async function carregarDadosDoAppsScript() {
         }
 
         const dados = await response.json();
-	
+	console.log(dados);
         console.log('Dados recebidos do Apps Script:', dados);
 
         exibirDadosNaPagina(dados);
@@ -41,6 +41,7 @@ async function carregarDadosDoAppsScript() {
  * @param {Object} dados - O objeto JSON retornado pelo Apps Script.
  */
 function exibirDadosNaPagina(dados) {
+	
     const container = document.getElementById('conteudo-json');
 
     if (!container) {
@@ -49,7 +50,7 @@ function exibirDadosNaPagina(dados) {
     }
 
     let htmlContent = '';
-	console.log(dados);
+	
     if (dados) {
         if (typeof dados === 'object' && dados !== null && dados.g14 !== undefined && Array.isArray(dados.x265_x272)) {
 	    
