@@ -1,13 +1,3 @@
-/*const loader = document.getElementById('loader');
-const container = document.getElementById('conteudo-json');
-const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycSEULINKCORRETO/exec';
-
-loader.style.display = 'block'; // Mostra o loader
-container.innerHTML = '';       // Limpa conteúdo
-
-// Ao final da função (dentro do try), esconda o loader:
-loader.style.display = 'none';  // Esconde o loader*/
-
 // script.js
 
 // A URL do seu Google Apps Script, conforme fornecida.
@@ -62,6 +52,8 @@ function exibirDadosNaPagina(dados) {
 
     if (dados) {
         if (typeof dados === 'object' && dados !== null && dados.g14 !== undefined && Array.isArray(dados.x265_x272)) {
+
+			alert(dados);
 
             // Exibindo o valor de G14
             const g14DisplayValue = (dados.g14 === null || dados.g14 === undefined || dados.g14 === "")
