@@ -1,7 +1,7 @@
 // script.js
 
 // A URL do seu Google Apps Script, conforme fornecida.
-const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxOuXGU3ieQFp75G0sJMKbFqB_g5J4QqFLJGZefvV4jVp9SYsm4UK66_Pzmrfx6QMvqiA/exec';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxbUzaFlTPvxYekTXAkHZxy-_HYNOjgKgcQIZbR_mg5xePvMviJcNKOf-RemsdDwgsOVw/exec';
 
 /**
  * Função assíncrona para carregar os dados do Google Apps Script.
