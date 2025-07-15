@@ -99,10 +99,22 @@ body {
     gap: 20px;
 }
 
-.caixa-individual {
+.caixa-separada {
     background-color: #ccc;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
+}
+
+.numero-destaque {
+    font-size: 3rem;
+    font-weight: bold;
+    color: navy;
+}
+
+.texto-destaque {
+    font-size: 1.5rem;
+    color: navy;
+    margin-top: 10px;
 }
 
