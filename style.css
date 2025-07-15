@@ -47,13 +47,13 @@ body {
 }
 
 .g14-texto {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: navy;
     margin: 20px 0;
 }
 
 .g16-texto {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: darkred;
     margin: 20px 0;
 }
@@ -73,7 +73,7 @@ body {
 .coluna-direita-lista li {
     margin: 8px 0;
     color: navy;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 
 /* Botão de atualização */
