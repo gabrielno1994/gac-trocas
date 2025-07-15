@@ -8,10 +8,10 @@ async function carregarDadosDoAppsScript() {
         // Injetar na coluna da esquerda
         document.getElementById('coluna-esquerda').innerHTML = `
           <div class="coluna-esquerda-conteudo">
-            <div class="g14-numero">${json.G14}</div>
+            <div class="g14-numero">${json.g14}</div>
             <div class="g14-texto">troca(s) programada(s) para hoje</div>
             <div class="g16-texto">No momento estamos com</div>
-            <div class="g16-numero">${json.G16} pendência(s)</div>
+            <div class="g16-numero">${json.g16} pendência(s)</div>
           </div>
         `;
 
