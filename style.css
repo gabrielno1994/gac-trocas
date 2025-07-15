@@ -22,7 +22,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-    max-width: 1400px;
+    max-width: 1640px;
     margin: 0 auto 40px auto;
     padding: 0 20px;
 }
@@ -41,7 +41,7 @@ body {
 }
 
 .g14-numero {
-    font-size: 3rem;
+    font-size: 6rem;
     color: navy;
     font-weight: bold;
 }
@@ -59,7 +59,7 @@ body {
 }
 
 .g16-numero {
-    font-size: 3rem;
+    font-size: 6rem;
     color: darkred;
     font-weight: bold;
 }
