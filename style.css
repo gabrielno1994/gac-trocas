@@ -1,120 +1,33 @@
-/* Fundo geral e tipografia */
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #f0f4f8, #d9e2ec);
-    color: #333;
-    line-height: 1.6;
-    font-size: 18px;
-}
-
-/* Título no topo */
-.titulo-topo {
-    text-align: center;
-    font-size: 2rem;
-    margin: 20px 0;
-    color: #000;
-}
-
-/* Layout de colunas */
-.layout-duas-colunas {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    max-width: 1640px;
-    margin: 0 auto 40px auto;
-    padding: 0 20px;
-}
-
-.coluna {
-    flex: 1 1 300px;
-    background-color: #ccc;
-    padding: 20px;
-    border-radius: 8px;
-    box-sizing: border-box;
-}
-
-/* Conteúdo da coluna esquerda */
-.coluna-esquerda-conteudo {
-    text-align: center;
-}
-
-.g14-numero {
-    font-size: 6rem;
-    color: navy;
-    font-weight: bold;
-}
-
-.g14-texto {
-    font-size: 2rem;
-    color: navy;
-    margin: 20px 0;
-}
-
-.g16-texto {
-    font-size: 2rem;
-    color: darkred;
-    margin: 20px 0;
-}
-
-.g16-numero {
-    font-size: 6rem;
-    color: darkred;
-    font-weight: bold;
-}
-
-/* Lista da coluna direita */
-.coluna-direita-lista {
-    list-style-type: none;
-    padding: 0;
-}
-
-.coluna-direita-lista li {
-    margin: 8px 0;
-    color: navy;
-    font-size: 1.6rem;
-}
-
-/* Botão de atualização */
-.botao-recarregar {
-    display: block;
-    margin: 0 auto 20px auto;
-    padding: 12px 24px;
-    background-color: #0056b3;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1.1rem;
-    transition: background-color 0.3s;
-}
-.botao-recarregar:hover {
-    background-color: #003f80;
-}
-
 #coluna-esquerda {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.caixa-separada {
+.caixa-subpainel {
     background-color: #ccc;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
 }
 
-.numero-destaque {
+.caixa-subpainel .numero {
     font-size: 3rem;
     font-weight: bold;
-    color: navy;
 }
 
-.texto-destaque {
+.caixa-subpainel .texto {
     font-size: 1.5rem;
-    color: navy;
     margin-top: 10px;
 }
 
+/* CORES ESPECÍFICAS */
+.azul .numero,
+.azul .texto {
+    color: navy;
+}
+
+.vermelho .numero,
+.vermelho .texto {
+    color: darkred;
+}
