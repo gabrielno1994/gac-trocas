@@ -51,25 +51,25 @@ body {
 
 .g14-numero {
     font-size: 9rem;
-    color: navy;
+    color: #005234;
     font-weight: bold;
 }
 
 .g14-texto {
     font-size: 2.5rem;
-    color: navy;
+    color: #005234;
     margin: 20px 0;
 }
 
 .g16-texto {
     font-size: 2.5rem;
-    color: darkred;
+    color: #5a5c00;
     margin: 20px 0;
 }
 
 .g16-numero {
     font-size: 9rem;
-    color: darkred;
+    color: #5a5c00;
     font-weight: bold;
 }
 
@@ -81,22 +81,10 @@ body {
 
 .coluna-direita-lista li {
     margin: 8px 0;
-    color: navy;
+    color: #005234;
     font-size: 1.4rem;
 }
 
-/* Botão de atualização */
-.botao-recarregar {
-    display: block;
-    margin: 0 auto 20px auto;
-    padding: 12px 24px;
-    background-color: #0056b3;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1.1rem;
-    transition: background-color 0.3s;
 }
 .botao-recarregar:hover {
     background-color: #003f80;
