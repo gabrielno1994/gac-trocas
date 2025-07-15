@@ -17,7 +17,7 @@ async function carregarDadosDoAppsScript() {
               <div class="g16-texto">pendência(s) aberta(s)</div>
             </div>
           </div>
-`;
+        `;
 
         // Injetar na coluna da direita
         document.getElementById('coluna-direita').innerHTML = `
