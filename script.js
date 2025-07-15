@@ -20,7 +20,7 @@ async function carregarDadosDoAppsScript() {
     // Preencher painel direito com lista
     document.getElementById('coluna-direita').innerHTML = `
       <ul class="coluna-direita-lista">
-        ${json.x265_x272.map(item => `<li>- ${item}</li>`).join('')}
+        ${json.x265_x272.map(item => `<li>${item}</li>`).join('')}
       </ul>
     `;
   } catch (error) {
