@@ -9,22 +9,70 @@ body {
     font-size: 18px;
 }
 
-/* Container central */
-.container {
-    max-width: 1000px;
-    margin: 40px auto;
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+/* Título no topo */
+.titulo-topo {
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0;
+    color: #000;
 }
 
-/* Título */
-h1 {
-    font-size: 2rem;
-    color: #0056b3;
+/* Layout de colunas */
+.layout-duas-colunas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto 40px auto;
+}
+
+.coluna {
+    flex: 1 1 300px;
+    background-color: #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* Conteúdo da coluna esquerda */
+.coluna-esquerda-conteudo {
     text-align: center;
-    margin-bottom: 30px;
+}
+
+.g14-numero {
+    font-size: 3rem;
+    color: navy;
+    font-weight: bold;
+}
+
+.g14-texto {
+    font-size: 1.5rem;
+    color: navy;
+    margin: 20px 0;
+}
+
+.g16-texto {
+    font-size: 1.5rem;
+    color: darkred;
+    margin: 20px 0;
+}
+
+.g16-numero {
+    font-size: 3rem;
+    color: darkred;
+    font-weight: bold;
+}
+
+/* Lista da coluna direita */
+.coluna-direita-lista {
+    list-style-type: none;
+    padding: 0;
+}
+
+.coluna-direita-lista li {
+    margin: 8px 0;
+    color: navy;
+    font-size: 1.2rem;
 }
 
 /* Botão de atualização */
@@ -42,46 +90,4 @@ h1 {
 }
 .botao-recarregar:hover {
     background-color: #003f80;
-}
-
-/* Loader */
-#loader {
-    text-align: center;
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    color: #666;
-}
-
-/* Área onde os dados aparecem */
-#conteudo-json {
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f8f9fa;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-}
-
-/* Parágrafos e listas */
-#conteudo-json p {
-    margin: 10px 0;
-}
-#conteudo-json ul {
-    list-style-type: none;
-    padding: 0;
-}
-#conteudo-json li {
-    padding: 8px 12px;
-    margin-bottom: 6px;
-    background-color: #ffffff;
-    border-left: 4px solid #0056b3;
-    border-radius: 4px;
-}
-
-/* Destaque de texto */
-.destaque-trocas {
-    font-size: 1.5rem;
-    color: #570000;
-    text-align: center;
-    font-weight: bold;
 }
