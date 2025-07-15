@@ -46,25 +46,25 @@ body {
 }
 
 .g14-numero {
-    font-size: 10rem;
+    font-size: 9rem;
     color: navy;
     font-weight: bold;
 }
 
 .g14-texto {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: navy;
     margin: 20px 0;
 }
 
 .g16-texto {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: darkred;
     margin: 20px 0;
 }
 
 .g16-numero {
-    font-size: 10rem;
+    font-size: 9rem;
     color: darkred;
     font-weight: bold;
 }
@@ -78,7 +78,7 @@ body {
 .coluna-direita-lista li {
     margin: 8px 0;
     color: navy;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 /* Botão de atualização */
