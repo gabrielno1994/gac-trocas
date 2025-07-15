@@ -100,3 +100,16 @@ body {
     margin-bottom: 20px;
     text-align: center;
 }
+
+.painel-esquerdo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.caixa-subpainel {
+    background-color: #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
