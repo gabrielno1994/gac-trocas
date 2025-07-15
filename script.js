@@ -1,6 +1,6 @@
 async function carregarDadosDoAppsScript() {
   try {
-    const response = await fetch('SUA_URL_DO_APPS_SCRIPT');
+    const response = await fetch('https://script.google.com/macros/s/AKfycbxbUzaFlTPvxYekTXAkHZxy-_HYNOjgKgcQIZbR_mg5xePvMviJcNKOf-RemsdDwgsOVw/exec');
     const json = await response.json();
 
     console.log('JSON RECEBIDO:', json);
