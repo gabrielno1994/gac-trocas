@@ -93,23 +93,16 @@ body {
     background-color: #003f80;
 }
 
-.sub-container {
-    background-color: #ccc;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.painel-esquerdo {
+#coluna-esquerda {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.caixa-subpainel {
+.caixa-individual {
     background-color: #ccc;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
 }
+
