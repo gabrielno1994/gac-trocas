@@ -37,7 +37,11 @@ body {
 
 /* Conteúdo da coluna esquerda */
 .coluna-esquerda-conteudo {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    height: 100%;
 }
 
 .g14-numero {
@@ -91,17 +95,4 @@ body {
 }
 .botao-recarregar:hover {
     background-color: #003f80;
-}
-
-#coluna-esquerda {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.caixa-individual {
-    background-color: #ccc;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
 }
