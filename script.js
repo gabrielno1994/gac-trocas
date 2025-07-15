@@ -12,12 +12,12 @@ async function carregarDadosDoAppsScript() {
               <div class="g14-numero">${json.g14}</div>
               <div class="g14-texto">troca(s) programada(s) para hoje</div>
             </div>
-            <div class="caixa-subpainel g16-caixa">
-              <div class="g16-numero">${json.g16}</div>
-              <div class="g16-texto">pendência(s) aberta(s)</div>
-            </div>
+          <div class="caixa-subpainel g16-caixa">
+            <div class="g16-numero">${json.g16}</div>
+            <div class="g16-texto">pendência(s) aberta(s)</div>
           </div>
-        `;
+        </div>
+    `;
 
         // Injetar na coluna da direita
         document.getElementById('coluna-direita').innerHTML = `
