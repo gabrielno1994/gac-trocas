@@ -26,3 +26,4 @@ async function carregarDadosDoAppsScript() {
         alert('Erro ao carregar dados. Verifique o console.');
     }
 }
+carregarDadosDoAppsScript();
