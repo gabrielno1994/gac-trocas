@@ -3,6 +3,7 @@ async function carregarDadosDoAppsScript() {
         // Substitua pela sua URL real do Apps Script
         const response = await fetch('https://script.google.com/macros/s/AKfycbxbUzaFlTPvxYekTXAkHZxy-_HYNOjgKgcQIZbR_mg5xePvMviJcNKOf-RemsdDwgsOVw/exec');
         const json = await response.json();
+        console.log('JSON RECEBIDO:', json);
 
         // Injetar na coluna da esquerda
         document.getElementById('coluna-esquerda').innerHTML = `
