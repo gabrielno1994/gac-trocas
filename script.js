@@ -5,19 +5,19 @@ async function carregarDadosDoAppsScript() {
 
     console.log('JSON RECEBIDO:', json);
 
-    // Painel esquerdo com DUAS caixas empilhadas SEPARADAS
+    // Preencher painel esquerdo com duas caixas separadas
     document.getElementById('coluna-esquerda').innerHTML = `
-      <div class="caixa-subpainel azul">
-        <div class="numero">${json.g14}</div>
-        <div class="texto">troca(s) programada(s) para hoje</div>
+      <div class="caixa-individual">
+        <div class="g14-numero">${json.g14}</div>
+        <div class="g14-texto">troca(s) programada(s) para hoje</div>
       </div>
-      <div class="caixa-subpainel vermelho">
-        <div class="numero">${json.g16}</div>
-        <div class="texto">pendência(s) aberta(s)</div>
+      <div class="caixa-individual">
+        <div class="g16-numero">${json.g16}</div>
+        <div class="g16-texto">pendência(s) aberta(s)</div>
       </div>
     `;
 
-    // Painel direito com lista
+    // Preencher painel direito com lista
     document.getElementById('coluna-direita').innerHTML = `
       <ul class="coluna-direita-lista">
         ${json.x265_x272.map(item => `<li>- ${item}</li>`).join('')}
@@ -29,5 +29,5 @@ async function carregarDadosDoAppsScript() {
   }
 }
 
-// Chama automaticamente ao abrir a página
+// Chama automaticamente ao carregar a página
 window.addEventListener('DOMContentLoaded', carregarDadosDoAppsScript);
