@@ -3,33 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="refresh" content="600">
+    <meta http-equiv="refresh" content="600">
   <title>Relatório de Trocas</title>
 
-  <!-- Fonte moderna -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-  <!-- Estilos -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <h1 class="titulo-topo">Relatório de Trocas do Dia</h1>
 
-  <div class="container">
-    <h1>
-      📊 Relatório de Trocas do Dia
-    </h1>
-
-    <!-- Botão para atualizar -->
-    <button onclick="carregarDadosDoAppsScript()" class="botao-recarregar">🔁 Atualizar Dados</button>
-
-    <!-- Loader -->
-   <!-- <div id="loader">🔄 Carregando...</div> -->
-
-    <!-- Conteúdo vindo do script -->
-    <div id="conteudo-json"></div>
+  <div class="layout-duas-colunas">
+    <div id="coluna-esquerda" class="coluna">
+      <!-- Conteúdo JS -->
+    </div>
+    <div id="coluna-direita" class="coluna">
+      <!-- Conteúdo JS -->
+    </div>
   </div>
 
-  <!-- Script -->
+  <button onclick="carregarDadosDoAppsScript()" class="botao-recarregar">🔁 Atualizar Dados</button>
+
   <script src="script.js"></script>
 </body>
 </html>
