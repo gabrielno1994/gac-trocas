@@ -5,27 +5,24 @@ async function carregarDadosDoAppsScript() {
 
     console.log('JSON RECEBIDO:', json);
 
-    // Painel esquerdo com DUAS caixas empilhadas
-    const painelEsquerdo = `
-      <div class="caixa-separada">
-        <div class="numero-destaque">${json.g14}</div>
-        <div class="texto-destaque">troca(s) programada(s) para hoje</div>
+    // Painel esquerdo com DUAS caixas empilhadas SEPARADAS
+    document.getElementById('coluna-esquerda').innerHTML = `
+      <div class="caixa-subpainel azul">
+        <div class="numero">${json.g14}</div>
+        <div class="texto">troca(s) programada(s) para hoje</div>
       </div>
-      <div class="caixa-separada">
-        <div class="numero-destaque">${json.g16}</div>
-        <div class="texto-destaque">pendência(s) aberta(s)</div>
+      <div class="caixa-subpainel vermelho">
+        <div class="numero">${json.g16}</div>
+        <div class="texto">pendência(s) aberta(s)</div>
       </div>
     `;
-    document.getElementById('coluna-esquerda').innerHTML = painelEsquerdo;
 
     // Painel direito com lista
-    const painelDireito = `
+    document.getElementById('coluna-direita').innerHTML = `
       <ul class="coluna-direita-lista">
         ${json.x265_x272.map(item => `<li>- ${item}</li>`).join('')}
       </ul>
     `;
-    document.getElementById('coluna-direita').innerHTML = painelDireito;
-
   } catch (error) {
     console.error('Erro ao carregar dados:', error);
     alert('Erro ao carregar dados. Verifique o console.');
