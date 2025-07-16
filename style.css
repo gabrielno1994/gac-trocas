@@ -1,9 +1,11 @@
 /* Fundo geral e tipografia */
 body {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'DePixel', sans-serif;
+    font-weight: 100;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #ffffff, #ffffff);
+    background: url('https://i.imgur.com/CwZ2RLR.png') repeat;
+    background-size: cover;
     color: #333;
     line-height: 1.6;
     font-size: 18px;
@@ -29,15 +31,24 @@ body {
 
 .coluna {
     flex: 1 1 300px;
-    background-image: url('https://i.imgur.com/u1F7qCW.png');
-    background-size: cover;
-    background-position: center;
     border-radius: 8px;
     padding: 20px;
     box-sizing: border-box;
-    padding: 20px;
-    box-sizing: border-box;
 }
+
+#coluna-esquerda {
+    background-image: url('https://i.imgur.com/DkjYdql.png') !important;
+    background-size: cover;
+    background-position: center;
+}
+
+#coluna-direita {
+    background-image: url('https://i.imgur.com/K350G9k.png') !important;
+    background-size: cover;
+    background-position: center;
+}
+
+   
 
 /* Conteúdo da coluna esquerda */
 .coluna-esquerda-conteudo {
@@ -51,25 +62,25 @@ body {
 
 .g14-numero {
     font-size: 9rem;
-    color: #005234;
+    color: #FFFFFF;
     font-weight: bold;
 }
 
 .g14-texto {
     font-size: 2.5rem;
-    color: #005234;
+    color: #FFFFFF;
     margin: 20px 0;
 }
 
 .g16-texto {
     font-size: 2.5rem;
-    color: #5a5c00;
+    color: #FFFFFF;
     margin: 20px 0;
 }
 
 .g16-numero {
     font-size: 9rem;
-    color: #5a5c00;
+    color: #FFFFFF;
     font-weight: bold;
 }
 
@@ -81,7 +92,7 @@ body {
 
 .coluna-direita-lista li {
     margin: 8px 0;
-    color: #005234;
+    color: #FFFFFF;
     font-size: 1.4rem;
 }
 
