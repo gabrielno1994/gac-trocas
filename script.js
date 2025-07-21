@@ -5,6 +5,12 @@ async function carregarDadosDoAppsScript() {
 
     console.log('JSON RECEBIDO:', json);
 
+const totalPercent = json.totalpercent; // vem do JSON
+const barra = document.getElementById('barra-progresso');
+const larguraMaxima = 1518; // igual à .barra-fundo
+const larguraAtual = totalPercent * larguraMaxima;
+barra.style.width = `${larguraAtual}px`;
+
     // Preencher painel esquerdo com duas caixas separadas
     document.getElementById('coluna-esquerda').innerHTML = `
       <div class="caixa-individual">
@@ -28,11 +34,6 @@ async function carregarDadosDoAppsScript() {
     alert('Erro ao carregar dados. Verifique o console.');
   }
 
-const totalPercent = json.totalpercent; // vem do JSON
-const barra = document.getElementById('barra-progresso');
-const larguraMaxima = 1518; // igual à .barra-fundo
-const larguraAtual = totalPercent * larguraMaxima;
-barra.style.width = `${larguraAtual}px`;
 
 }
 
