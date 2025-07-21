@@ -1,6 +1,6 @@
 async function carregarDadosDoAppsScript() {
   try {
-    const response = await fetch('https://script.google.com/macros/s/AKfycby91ZA88Hi3R5I_Ehnd5uWo6XV6wvacouCG-eokJQ0XZbNcTVUWdQAzXrvedDUmlhyVVw/exec');
+    const response = await fetch('https://script.google.com/macros/s/AKfycbzrl9ULYixlgDS5MhCxJO-VV1eBwB--BoeERvoYja2Zwu7nMR7M5g1NDYLjq4hRHaqPCg/exec');
     const json = await response.json();
 
     console.log('JSON RECEBIDO:', json);
@@ -27,6 +27,13 @@ async function carregarDadosDoAppsScript() {
     console.error('Erro ao carregar dados:', error);
     alert('Erro ao carregar dados. Verifique o console.');
   }
+
+const totalPercent = json.totalpercent; // vem do JSON
+const barra = document.getElementById('barra-progresso');
+const larguraMaxima = 1518; // igual à .barra-fundo
+const larguraAtual = totalPercent * larguraMaxima;
+barra.style.width = `${larguraAtual}px`;
+
 }
 
 // Chama automaticamente ao carregar a página
