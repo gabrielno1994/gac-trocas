@@ -31,7 +31,6 @@ body {
 
 .coluna {
     flex: 1 1 300px;
-    border-radius: 8px;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -99,4 +98,29 @@ body {
 }
 .botao-recarregar:hover {
     background-color: #003f80;
+}
+
+.container-barra {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.barra-fundo {
+    width: 1538px;
+    height: 78px;
+    background: url('https://i.imgur.com/NmeDU3T.png') no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.barra-progresso {
+    width: 160px;
+    height: 44px;
+    background: url('https://i.imgur.com/KSdHx0F.png') no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 24px;
+    left: 10px;
+    transition: width 0.5s ease-in-out;
 }
